@@ -1,0 +1,165 @@
+.navbar{
+  height: 5rem;
+  background-color: white;
+}
+body{
+  
+
+  font-family: "Plus Jakarta Sans", sans-serif ! important;
+ display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container{
+  flex:1;
+}
+
+.fa-compass{
+  color: #fe424d;
+  font-size:2rem;
+}
+.nav-link{
+  color:#222222 ! important;
+}
+/* Footer */
+ .f-info-links a{
+  text-decoration: none ;
+  color: #222222;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+.f-info-links
+{
+  width:100%;
+  
+}
+.f-info-socials{
+  width:100% ;
+  font-size:1.5rem;
+  margin-right: 1.2rem;
+}
+
+.f-info-socials i{
+  margin-right:1rem;
+  font-size:1.5rem;
+}
+
+.f-info{
+  text-align:center;
+  height: 8rem;
+  background-color: antiquewhite;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:  space-evenly;
+}
+.f-info-links,
+f-info-socials, .f-info-brand{
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+ /* Card  */
+ .listing-Card {
+  border: none ! important;
+  margin-bottom: 2rem;
+ }
+
+ .card-img-top {
+  border-radius: 1rem ! important;
+  width:100% ! important;
+  object-fit: cover !important;
+ }
+ .Card-body {
+  padding: 0 ! important;
+ }
+
+ .card-text {
+  font-weight: 400;
+ }
+
+ .listing-link{
+  text-decoration: none;
+ }
+ /* Card Effect */
+.card-img-overlay{
+  opacity:0;
+}
+.card-img-overlay:hover {
+opacity:0.2;
+background-color: white;
+}
+.add-btn{
+  background-color: red;
+  border: none;
+}
+
+/* New page */
+.form-control{
+  width:50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border:5px solid #fe424d;
+  border-radius: 20px;
+  
+}
+.form-description{
+   width:50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border:5px solid #fe424d;
+  border-radius: 20px;
+}
+.form-image{
+  width:50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border:5px solid #fe424d;
+  border-radius: 20px;
+}
+.form-price{
+  width:50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border:5px solid #fe424d;
+  border-radius: 20px;
+}
+.form-country{
+  width:50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border:5px solid #fe424d;
+  border-radius: 20px;
+}
+.form-location{
+  width:50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border:5px solid #fe424d;
+  border-radius: 20px;
+}
+.button-type:hover{
+  background-color: palevioletred;
+}
+
+/* EDIT PAGE */
+btn btn-dark edit-btn{
+background-color: red;
+display:flex;
+padding-left: 30%;
+}
+
+/* SHOW PAGE */
+.show-img{
+  height: 30vh;
+
+}
+/* .card-img-top show-img:hover{
+background-color: antiquewhite;
+} */
+.btns{
+  display: flex;
+}
+

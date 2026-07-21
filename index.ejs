@@ -1,0 +1,118 @@
+<% layout ("/layouts/boilerplate") %>
+<body>
+    <!-- <h3>All Listings</h3> -->
+    <!-- <form method="GET" action="/listings/new">
+      <button>Create New Listing</button>  
+        
+    </form> -->
+      
+    <style>
+      #filters {
+      
+        display:flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        gap:10px;
+        
+      }
+      .filter{
+        text-align: center;
+        cursor: pointer;
+        margin-right: 2rem;
+        margin-top: 2rem;
+        opacity:0.7;
+      }
+      .filter:hover{
+        opacity:1;
+      }
+    </style>
+
+
+    <div id="filters">
+      <div class="filter">
+      <div> <i class="fa-solid fa-fire"></i> </div>
+      <p> Trending</p>
+      </div>
+  
+      <div id="filters">
+      <div class="filter">
+      <div><i class="fa-solid fa-bed"></i></div>
+      <p>Room</p>
+    </div>
+    </div>
+
+
+    <div id="filters">
+      <div class="filter">
+      <div><i class="fa-solid fa-city"></i></div>
+      <p>Iconic City</p>
+    </div>
+    </div>
+
+    <div id="filters">
+      <div class="filter">
+      <div><i class="fa-solid fa-mountain"></i> </div>
+      <p>Mountain</p>
+    </div>
+    </div>
+
+    <div id="filters">
+      <div class="filter">
+    <div> <i class="fa-solid fa-chair"></i>  </div>
+      <p>Resting zone</p>
+    </div>
+    </div>
+
+    <div id="filters">
+      <div class="filter">
+    <div> <i class="fa-solid fa-football"></i> </div>
+      <p>Playing Zone</p>
+    </div>
+    </div>
+
+    <div id="filters">
+      <div class="filter">
+    <div><i class="fa-solid fa-book"></i> </div>
+      <p>Mind free zone</p>
+      
+    </div>
+    </div>
+
+    <div id="filters">
+      <div class="filter">
+    <div><i class="fa-solid fa-tree"></i> </div>
+      <p>Cold Place</p>
+    </div>
+    </div>
+
+    
+     
+
+ <div class="row row-cols-lg-3 row-cols-mid-2 row-cols-sm-1 mt-3">
+      <% for(let listing of allListings) {%>
+
+        <a href="/listings/<%= listing._id %>" class="listing-link">
+          <div class="card col listing-card"></div>
+
+<div class="card" style="width: 25rem;">
+  <img src="<%= listing.image.url %>" class="card-img-top" alt="listing_image" style="height:20rem"/>
+  <div class="card-img-overlay"></div>
+  <div class="card-body">
+    <p class="card-text">
+     <b><%= listing.title %><br></b>
+      &#8377;<%= listing.price.toLocaleString("en-IN") %> /night
+
+
+     </p>
+  </div>
+</div>
+</a>
+<% } %>
+</ul>
+
+    </div>
+
+
+    
+      
+</body>
